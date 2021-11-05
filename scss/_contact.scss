@@ -1,0 +1,49 @@
+
+/*Contact */
+
+.container{
+    padding: 5%;
+}
+.container-grid{
+   display: grid;
+   grid-template-columns: 30% 30%;
+   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+   grid-template-areas: 
+   "titulo titulo"
+    "nombre apellido"
+    "telefono email"
+    "terminos terminos"
+    "mensaje mensaje"
+    "enviar enviar"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+#titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+#nombre{
+    grid-area: nombre;
+}
+
+#apellido{
+    grid-area: apellido;
+}
+#telefono{
+    grid-area: telefono;
+}
+#email{
+    grid-area: email;
+}
+#terminos{
+    grid-area: terminos;
+}
+#mensaje{
+    grid-area: mensaje;
+    text-align: center;
+}
+#enviar{
+    grid-area: enviar;
+
+}

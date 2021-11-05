@@ -1,0 +1,32 @@
+/*Main Index*/
+
+.container-index{
+    display: flex;
+    width: 100%;
+    padding: 5%;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.container-info{
+    border: solid 2px white;
+    padding: 20px;
+    width: 40rem;
+
+}
+.container-info ul{
+    margin-top: 1rem;
+}
+
+.container-info ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 10px;
+    display: inline;
+}
+.image{
+    background-color: #e5e5e5;
+    width: 400px;
+    height: 400px;
+}
