@@ -1,49 +1,59 @@
+.contact-section{
+    padding: 2rem 0;
 
-/*Contact */
+}
 
-.container{
-    padding: 5%;
-}
-.container-grid{
-   display: grid;
-   grid-template-columns: 30% 30%;
-   grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-   grid-template-areas: 
-   "titulo titulo"
-    "nombre apellido"
-    "telefono email"
-    "terminos terminos"
-    "mensaje mensaje"
-    "enviar enviar"
-    ;
-    justify-content: center;
-    align-content: center;
-}
-#titulo{
-    grid-area: titulo;
+.contact-section h1{
     text-align: center;
+    color: #ddd;
 }
-#nombre{
-    grid-area: nombre;
+.border{
+    width: 100px;
+    height: 10px;
+    background-color: #34495e;
+    margin: 2rem auto;
 }
 
-#apellido{
-    grid-area: apellido;
-}
-#telefono{
-    grid-area: telefono;
-}
-#email{
-    grid-area: email;
-}
-#terminos{
-    grid-area: terminos;
-}
-#mensaje{
-    grid-area: mensaje;
-    text-align: center;
-}
-#enviar{
-    grid-area: enviar;
+.contact-form{
+    margin: auto;
+    padding: 0 10px;
 
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0px;
+    border:0;
+    background-color: #111;
+    padding: 20px 40px;
+    outline: none;
+    transition: 0.5s;
+    color: #ddd;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+
+}
+
+.contact-form-btn{
+    float: right;
+    border:0;
+    background-color: #34495e;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+    background-color: #2980b9;
 }

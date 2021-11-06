@@ -31,40 +31,19 @@
     </header>
     <!--Formulario de contacto-->
     <main class="container">
-        <form action="" method="get" class="container-grid">
-                <legend id="titulo">Contact Form</legend>
-                <div id="nombre">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" required>
-                </div>
-                <div id="apellido">
-                    <label for="surname">Surname:</label>
-                    <input type="text" name="surname" id="surname" required>
-                </div>
-                
-                <div id="telefono">
-                    <label for="phone">Phone:</label>
-                    <input type="number" name="phone" id="phone" required>
-                </div>
-                <div id="mail">
-                    <label for="mail" name="email" id="email"> Email:</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-            
-                <div id="terminos">
-                    <label for="terms">Terms and conditions</label>
-                    <input type="checkbox" name="acept" id="acept" value="1" required>
-                </div>
-                <div id="mensajes">
-                    <label for="message">Message</label>
-                    <br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Deje su mensaje..."></textarea>
-                </div>
-                <div id="enviar">
-                    <input type="submit" value="Send form">
-                    <input type="reset" value="Reset form">
-                </div>               
+        <div class="contact-section">
+            <h1>Contact Me</h1>
+            <div class="border"></div>
+        
+        <form action="" method="get" >
+            <input type="text" class="contact-form-text" placeholder="Your name">
+            <input type="email" class="contact-form-text" placeholder="Your email">
+            <input type="text" class="contact-form-text" placeholder="Your phone">
+            <textarea class="contact-form-text" placeholder="Your message"></textarea>
+            <input type="submit" class="contact-form-btn" value="Send">
+             
         </form>
+        </div>
     </main>
     <footer>
         <div class="logo" ></div>

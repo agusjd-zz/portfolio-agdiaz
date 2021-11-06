@@ -14,6 +14,10 @@ body {
   font-size: 1.4rem;
 }
 
+.container {
+  margin: 4%;
+}
+
 /*Menu*/
 .menu {
   background-color: black;
@@ -23,13 +27,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  color: white;
-  font-size: 1.4rem;
-  padding: 0 8px;
-  font-weight: bold;
 }
 
 .menu_items {
@@ -67,11 +64,6 @@ ul.show {
 }
 
 @media screen and (max-width: 952px) {
-  .logo {
-    font-size: 30px;
-    padding-left: 35px;
-  }
-
   .menu_items li a {
     font-size: 16px;
   }
@@ -106,7 +98,7 @@ ul.show {
   }
 
   .menu_items li a:hover {
-    color: red;
+    color: black;
   }
 
   .logo {
@@ -189,52 +181,62 @@ footer div ul li {
   margin-right: 70%;
 }
 
-/*Contact */
-.container {
-  padding: 5%;
+.contact-section {
+  padding: 2rem 0;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-columns: 30% 30%;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  grid-template-areas: "titulo titulo" "nombre apellido" "telefono email" "terminos terminos" "mensaje mensaje" "enviar enviar";
-  justify-content: center;
-  align-content: center;
-}
-
-#titulo {
-  grid-area: titulo;
+.contact-section h1 {
   text-align: center;
+  color: #ddd;
 }
 
-#nombre {
-  grid-area: nombre;
+.border {
+  width: 100px;
+  height: 10px;
+  background-color: #34495e;
+  margin: 2rem auto;
 }
 
-#apellido {
-  grid-area: apellido;
+.contact-form {
+  margin: auto;
+  padding: 0 10px;
 }
 
-#telefono {
-  grid-area: telefono;
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0px;
+  border: 0;
+  background-color: #111;
+  padding: 20px 40px;
+  outline: none;
+  transition: 0.5s;
+  color: #ddd;
 }
 
-#email {
-  grid-area: email;
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
 }
 
-#terminos {
-  grid-area: terminos;
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
 }
 
-#mensaje {
-  grid-area: mensaje;
-  text-align: center;
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background-color: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-#enviar {
-  grid-area: enviar;
+.contact-form-btn:hover {
+  background-color: #2980b9;
 }
 
 /*# sourceMappingURL=style.css.map */
