@@ -17,7 +17,7 @@ body {
 /*Menu*/
 .menu {
   background-color: black;
-  height: 75px;
+  height: 95px;
   width: 100%;
   border-bottom: solid 1px white;
   display: flex;
@@ -27,7 +27,7 @@ body {
 
 .logo {
   color: white;
-  font-size: 35px;
+  font-size: 1.4rem;
   padding: 0 8px;
   font-weight: bold;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 ul.show {
-  top: 65px;
+  top: 85px;
 }
 
 @media screen and (max-width: 952px) {
@@ -78,7 +78,7 @@ ul.show {
 }
 @media screen and (max-width: 858px) {
   .menu {
-    height: 65px;
+    height: 75px;
   }
 
   .btn_menu {
@@ -88,9 +88,9 @@ ul.show {
   .menu_items {
     position: fixed;
     width: 100vw;
-    height: calc(100% - 65px);
+    height: calc(100% - 85px);
     background-color: black;
-    top: -100vh;
+    top: -90vh;
     text-align: center;
     transition: all 0.4s;
     flex-direction: column;
@@ -102,7 +102,7 @@ ul.show {
   }
 
   .menu_items li:hover {
-    background: none;
+    background: grey;
   }
 
   .menu_items li a:hover {
