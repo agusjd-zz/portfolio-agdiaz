@@ -136,6 +136,11 @@ footer div ul li {
   align-content: center;
 }
 
+@media screen and (max-width: 952px) {
+  .container-index {
+    flex-direction: column;
+  }
+}
 .container-info {
   border: solid 2px white;
   padding: 20px;
@@ -159,6 +164,11 @@ footer div ul li {
   height: 400px;
 }
 
+.title-skill {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 /*Portfolio*/
 .imgAgency {
   width: 20rem;
@@ -176,8 +186,8 @@ footer div ul li {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px, 200px;
-  grid-template-rows: 200px, 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: "fila1-1 fila1-2" "fila2-1 fila2-2";
 }
 

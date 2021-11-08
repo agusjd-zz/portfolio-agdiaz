@@ -8,6 +8,12 @@
     align-content: center;
 
 }
+@media screen and (max-width:952px) {
+    .container-index{
+        flex-direction: column;
+    }
+    
+}
 
 .container-info{
     border: solid 2px white;
