@@ -2,7 +2,7 @@
 
 $mainColor : black;
 $secondaryColor : white;
-
+$font: 'Zen Maru Gothic', sans-serif;
 
 /*Body*/
 
@@ -15,7 +15,7 @@ $secondaryColor : white;
 body{
     background-color: $mainColor;
     color: $secondaryColor;
-    font-family: 'Zen Maru Gothic', sans-serif;
+    font-family: $font;
     font-size: 1.4rem;
 }
 .container{

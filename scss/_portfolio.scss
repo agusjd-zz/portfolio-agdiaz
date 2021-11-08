@@ -13,3 +13,28 @@
     width: 48px;
 
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px ,200px;
+    grid-template-rows: 200px, 200px;
+    grid-template-areas: 
+    "fila1-1 fila1-2"
+    "fila2-1 fila2-2";
+}
+
+.fila1-1{
+    grid-area: fila1-1;
+}
+
+.fila1-2{
+    grid-area: fila1-2;
+}
+
+.fila2-1{
+    grid-area: fila2-1;
+}
+
+.fila2-2{
+    grid-area: fila2-2;
+}
