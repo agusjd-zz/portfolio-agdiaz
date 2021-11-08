@@ -134,11 +134,17 @@ footer div ul li {
   padding: 5%;
   justify-content: space-between;
   align-content: center;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 952px) {
-  .container-index {
-    flex-direction: column;
+@media screen and (max-width: 858px) {
+  .image {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .container-info {
+    margin-top: 2rem;
   }
 }
 .container-info {

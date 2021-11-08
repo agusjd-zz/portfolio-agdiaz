@@ -6,21 +6,25 @@
     padding: 5%;
     justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
 
 }
-@media screen and (max-width:952px) {
-    .container-index{
-        flex-direction: column;
+@media screen and (max-width:858px) {
+    .image{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
-    
+    .container-info{
+        margin-top: 2rem;
+    }
 }
-
 .container-info{
     border: solid 2px white;
     padding: 20px;
     width: 40rem;
 
 }
+
 .container-info ul{
     margin-top: 1rem;
 }
