@@ -2,3 +2,24 @@
     text-align: center;
     margin-bottom: 4rem;
 }
+
+.flex-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-skills img{
+    margin-right: 40px;
+}
+
+.description-title{
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:858px){
+    .description-title{
+        margin-left: 2rem;
+    }
+}

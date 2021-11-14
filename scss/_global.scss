@@ -17,9 +17,11 @@ body{
     color: $secondaryColor;
     font-family: $font;
     font-size: 1.4rem;
+
 }
 .container{
     margin: 4%;
+    min-height: 50vh;
 }
 /*Menu*/
 .menu{
@@ -81,7 +83,7 @@ ul.show{
     }
 
     .menu_items{
-        position: fixed;
+        position: absolute;
         width: 100vw;
         height: calc(100% - 85px);
         background-color: $mainColor;
@@ -108,16 +110,19 @@ ul.show{
         font-size: 25px;
         padding-left: 35px;
     }
+    .photo{
+        width: 100%;
+    }
 }
 
 /*Footer*/
 
 footer{
     background-color: $mainColor;
-    height: 150px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     border-top: solid 1px $secondaryColor;
     width: 100%;
+    position: absolute;
   
 }
 

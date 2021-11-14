@@ -16,6 +16,7 @@ body {
 
 .container {
   margin: 4%;
+  min-height: 50vh;
 }
 
 /*Menu*/
@@ -78,7 +79,7 @@ ul.show {
   }
 
   .menu_items {
-    position: fixed;
+    position: absolute;
     width: 100vw;
     height: calc(100% - 85px);
     background-color: black;
@@ -105,14 +106,18 @@ ul.show {
     font-size: 25px;
     padding-left: 35px;
   }
+
+  .photo {
+    width: 100%;
+  }
 }
 /*Footer*/
 footer {
   background-color: black;
-  height: 150px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   border-top: solid 1px white;
   width: 100%;
+  position: absolute;
 }
 
 footer div {
@@ -135,16 +140,19 @@ footer div ul li {
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
+  min-height: 50vh;
 }
 
 @media screen and (max-width: 858px) {
   .image {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    order: 1;
   }
 
   .container-info {
     margin-top: 2rem;
+    order: 2;
   }
 }
 .container-info {
@@ -164,17 +172,31 @@ footer div ul li {
   display: inline;
 }
 
-.image {
-  background-color: #e5e5e5;
-  width: 400px;
-  height: 400px;
-}
-
 .title-skill {
   text-align: center;
   margin-bottom: 4rem;
 }
 
+.flex-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-skills img {
+  margin-right: 40px;
+}
+
+.description-title {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 858px) {
+  .description-title {
+    margin-left: 2rem;
+  }
+}
 /*Portfolio*/
 .imgAgency {
   width: 20rem;
@@ -214,10 +236,26 @@ footer div ul li {
 }
 
 /*Section Experience*/
+h1 {
+  text-align: center;
+}
+
 .jobContainer {
-  border: solid 3px white;
-  padding: 30px;
-  margin-right: 70%;
+  border: solid 2px white;
+  width: 40rem;
+}
+
+.coderhouse {
+  width: 400px;
+}
+
+.jobBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 5%;
 }
 
 .contact-section {

@@ -1,7 +1,22 @@
 /*Section Experience*/
-
+h1{
+    text-align: center;
+}
 .jobContainer{
-    border: solid 3px white;
-    padding:30px;
-    margin-right: 70%;
+    border: solid 2px white;
+    width:  40rem;
+
+}
+
+.coderhouse{
+    width: 400px;
+}
+
+.jobBox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 5%;
 }
