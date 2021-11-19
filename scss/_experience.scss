@@ -1,22 +1,42 @@
 /*Section Experience*/
-h1{
-    text-align: center;
-}
+
 .jobContainer{
     border: solid 2px white;
     width:  40rem;
+    padding: 2%;
+    margin-top: 2rem;
+
 
 }
 
 .coderhouse{
-    width: 400px;
+    width: 24rem;
+    margin-left: 10%;
+}
+
+.technisys{
+    text-align: center;
+    margin-left: 30%;
 }
 
 .jobBox{
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-content: center;
     flex-wrap: wrap;
-    padding: 5%;
+}
+
+
+@media screen and (max-width:858px){
+    .coderhouse{
+        width: 18rem;
+        margin-left: 5%;
+    }
+
+    .technisys{
+        margin-left: 20%;
+    }
+
 }
